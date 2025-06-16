@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:backgroundTint="#E6E6E6"
+    tools:context=".Sign_Up">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/headerlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="123dp"
+                        android:layout_height="103dp"
+
+                        android:contentDescription="TODO"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.542"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.2"
+                        app:srcCompat="@drawable/emergenz_logo"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <ImageButton
+                        android:id="@+id/backbutton"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:contentDescription="TODO"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.076"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.061"
+                        app:srcCompat="@drawable/back_button"
+                        tools:ignore="ContentDescription,DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/ContactAdd"
+                        android:layout_width="299dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="44dp"
+                        android:background="@drawable/rectangle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.548"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lgn_create"
+                        app:layout_constraintVertical_bias="0.009" />
+
+                    <TextView
+                        android:id="@+id/loginstatement"
+                        android:layout_width="160dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="92dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/create_an_account2"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/ContactAdd"
+                        app:layout_constraintHorizontal_bias="0.201"
+                        app:layout_constraintStart_toStartOf="@+id/ContactAdd"
+                        app:layout_constraintTop_toBottomOf="@+id/ContactAdd"
+                        tools:ignore="TextSizeCheck" />
+
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:foregroundGravity="center"
+                        app:layout_constraintBottom_toTopOf="@+id/loginstatement"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ContactAdd">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/lgn_btn"
+                                android:layout_width="299dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/roundstyle"
+                                android:backgroundTint="#330000"
+                                android:backgroundTintMode="add"
+                                android:contentDescription="Log IN"
+                                android:fontFamily="@font/nunito_sans"
+                                android:gravity="center"
+                                android:text="Log In"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.505"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0"
+                                tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+                            <ProgressBar
+                                android:id="@+id/progressbar"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn_signup"
+                        android:layout_width="47dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="92dp"
+                        android:background="@null"
+                        android:backgroundTint="@null"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/sign_up"
+                        android:textAllCaps="false"
+                        android:textColor="#03A9F4"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/ContactAdd"
+                        app:layout_constraintHorizontal_bias="0.777"
+                        app:layout_constraintStart_toStartOf="@+id/ContactAdd"
+                        app:layout_constraintTop_toBottomOf="@+id/ContactAdd"
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/lgn_proceed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="248dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/proceed_to"
+                        android:textColor="#0C0C0C"
+                        app:layout_constraintBottom_toTopOf="@+id/lgn_create"
+                        app:layout_constraintStart_toStartOf="@+id/ContactAdd"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="VisualLintOverlap" />
+
+                    <TextView
+                        android:id="@+id/lgn_create"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="@string/login_your_account"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/lgn_proceed"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/ContactAdd"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.401"
+                        tools:ignore="VisualLintOverlap" />
+
+                    <TextView
+                        android:id="@+id/lgn_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/nunito_sans_light"
+                        android:text="@string/phone_number"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toTopOf="@+id/ContactAdd"
+                        app:layout_constraintEnd_toEndOf="@+id/ContactAdd"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/ContactAdd"
+                        app:layout_constraintTop_toBottomOf="@+id/lgn_create"
+                        app:layout_constraintVertical_bias="0.4"
+                        tools:ignore="VisualLintOverlap" />
+
+                    <EditText
+                        android:id="@+id/editContact"
+                        android:layout_width="230dp"
+                        android:layout_height="36dp"
+                        android:autofillHints=""
+                        android:background="@null"
+                        android:ems="10"
+                        android:fontFamily="@font/nunito_sans"
+                        android:inputType="phone|number"
+                        android:maxLength="10"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/ContactAdd"
+                        app:layout_constraintEnd_toEndOf="@+id/ContactAdd"
+                        app:layout_constraintHorizontal_bias="0.938"
+                        app:layout_constraintStart_toStartOf="@+id/ContactAdd"
+                        app:layout_constraintTop_toTopOf="@+id/ContactAdd"
+                        app:layout_constraintVertical_bias="0.5"
+                        tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:contentDescription="TODO"
+                        app:layout_constraintBottom_toBottomOf="@+id/ContactAdd"
+                        app:layout_constraintStart_toStartOf="@+id/ContactAdd"
+                        app:layout_constraintTop_toTopOf="@+id/ContactAdd"
+                        app:layout_constraintVertical_bias="0.428"
+                        app:srcCompat="@drawable/baseline_smartphone_24"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/phpCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:gravity="center"
+                        android:text="+63"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ContactAdd"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="@+id/ContactAdd" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- This is for background -->
+
+        <!-- This is for Icon -->
+
+        <!-- This is for Typing -->
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

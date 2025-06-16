@@ -1,0 +1,36 @@
+@echo off
+
+cd C:\Users\Biancent\Desktop\BiancentIgop
+mkdir sortedfiles
+echo Folder sortedfiles created
+pause
+cd sortedfiles
+
+mkdir WordFiles
+echo Folder WordFiles Created
+pause 
+mkdir PowerpointFiles
+echo Folder PowerpointFiles Created 
+pause
+mkdir TextFiles
+echo Folder TextFiles Created 
+pause
+CLS
+cd C:\Users\Biancent\Desktop\BiancentIgop
+echo BiancentIgop is your current directory
+pause
+
+move C:\Users\Biancent\Desktop\BiancentIgop\*.docx sortedfiles\WordFiles
+echo All .docx file extension now moved to WordFiles
+pause
+CLS
+move C:\Users\Biancent\Desktop\BiancentIgop\*.pptx sortedfiles\PowerpointFiles
+echo All .pptx file extension now moved to PowerpointFiles
+pause
+CLS
+move C:\Users\Biancent\Desktop\BiancentIgop\*.txt sortedfiles\TextFiles
+echo All .txt file extension now moved to TextFiles
+pause
+
+echo EXECUTION FINISHED
+pause

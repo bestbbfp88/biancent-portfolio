@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:backgroundTint="#E6E6E6"
+    tools:context=".Sign_Up">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/headerlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/lgn_proceed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="136dp"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:text="@string/proceed_to"
+                                    android:textColor="#0C0C0C"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.003"
+                                    app:layout_constraintStart_toStartOf="@+id/lgn_create"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/lgn_create"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="168dp"
+                                    android:fontFamily="@font/nunito_sans_bold"
+                                    android:text="@string/create_a_account"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/fname"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/fname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="212dp"
+                                    android:layout_marginEnd="232dp"
+                                    android:fontFamily="@font/nunito_sans_light"
+                                    android:text="@string/first_name"
+                                    android:textColor="#000000"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/backgroundName"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/lname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/nunito_sans_light"
+                                    android:text="Last Name"
+                                    android:textColor="#000000"
+                                    app:layout_constraintStart_toStartOf="@+id/address"
+                                    app:layout_constraintTop_toBottomOf="@+id/backgroundName" />
+
+                                <TextView
+                                    android:id="@+id/Addresstext"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/nunito_sans_light"
+                                    android:text="@string/address"
+                                    android:textColor="#000000"
+                                    app:layout_constraintStart_toStartOf="@+id/backgroundContact"
+                                    app:layout_constraintTop_toBottomOf="@+id/address" />
+
+                                <TextView
+                                    android:id="@+id/lgn_contact"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/nunito_sans_light"
+                                    android:text="@string/Contact_Number"
+                                    android:textColor="#000000"
+                                    app:layout_constraintStart_toStartOf="@+id/background_Pass"
+                                    app:layout_constraintTop_toBottomOf="@+id/backgroundContact" />
+
+                                <TextView
+                                    android:id="@+id/create_OTP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/nunito_sans_light"
+                                    android:text="OTP"
+                                    android:textColor="#000000"
+                                    app:layout_constraintStart_toStartOf="@+id/background_OTP"
+                                    app:layout_constraintTop_toBottomOf="@+id/background_Pass" />
+
+                                <TextView
+                                    android:id="@+id/backgroundName"
+                                    android:layout_width="310dp"
+                                    android:layout_height="42dp"
+
+                                    android:layout_marginTop="248dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@drawable/rectangle"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.758"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/editFname"
+                                    android:layout_width="265dp"
+                                    android:layout_height="36dp"
+                                    android:autofillHints=""
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:inputType="text"
+                                    android:textColor="#000000"
+                                    app:layout_constraintBottom_toBottomOf="@+id/backgroundName"
+                                    app:layout_constraintEnd_toEndOf="@+id/backgroundName"
+                                    app:layout_constraintHorizontal_bias="0.938"
+                                    app:layout_constraintStart_toStartOf="@+id/backgroundName"
+                                    app:layout_constraintTop_toTopOf="@+id/backgroundName"
+                                    app:layout_constraintVertical_bias="0.5"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:id="@+id/address"
+                                    android:layout_width="310dp"
+                                    android:layout_height="42dp"
+                                    android:layout_marginTop="36dp"
+                                    android:background="@drawable/rectangle"
+                                    android:shadowColor="#050505"
+                                    app:layout_constraintStart_toStartOf="@+id/backgroundName"
+                                    app:layout_constraintTop_toBottomOf="@+id/backgroundName" />
+
+                                <TextView
+                                    android:id="@+id/background_Pass"
+                                    android:layout_width="310dp"
+                                    android:layout_height="42dp"
+                                    android:layout_marginTop="36dp"
+                                    android:background="@drawable/rectangle"
+                                    app:layout_constraintEnd_toEndOf="@+id/backgroundContact"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/backgroundContact"
+                                    app:layout_constraintTop_toBottomOf="@+id/backgroundContact" />
+
+                                <TextView
+                                    android:id="@+id/background_OTP"
+                                    android:layout_width="310dp"
+                                    android:layout_height="42dp"
+                                    android:layout_marginTop="39dp"
+                                    android:background="@drawable/rectangle"
+                                    app:layout_constraintEnd_toEndOf="@+id/background_Pass"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/background_Pass"
+                                    app:layout_constraintTop_toBottomOf="@+id/background_Pass" />
+
+                                <Button
+                                    android:id="@+id/btn_create"
+                                    android:layout_width="299dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="68dp"
+                                    android:background="@drawable/roundstyle"
+                                    android:backgroundTint="#330000"
+                                    android:backgroundTintMode="add"
+                                    android:contentDescription="@string/create_account"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:text="Create an Account"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintEnd_toEndOf="@+id/background_OTP"
+                                    app:layout_constraintHorizontal_bias="0.545"
+                                    app:layout_constraintStart_toStartOf="@+id/background_OTP"
+                                    app:layout_constraintTop_toBottomOf="@+id/background_OTP" />
+
+                                <TextView
+                                    android:id="@+id/loginstatement"
+                                    android:layout_width="160dp"
+                                    android:layout_height="17dp"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:text="Already have an account?"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/btn_create"
+                                    app:layout_constraintHorizontal_bias="0.143"
+                                    app:layout_constraintStart_toStartOf="@+id/btn_create"
+                                    app:layout_constraintTop_toBottomOf="@+id/btn_create"
+                                    tools:ignore="TextSizeCheck" />
+
+                                <Button
+                                    android:id="@+id/btn_signup"
+                                    android:layout_width="47dp"
+                                    android:layout_height="22dp"
+                                    android:layout_marginTop="18dp"
+                                    android:background="@null"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="@string/log_in"
+                                    android:textAllCaps="false"
+                                    android:textColor="#01579B"
+                                    android:textSize="12sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/btn_create"
+                                    app:layout_constraintHorizontal_bias="0.753"
+                                    app:layout_constraintStart_toStartOf="@+id/btn_create"
+                                    app:layout_constraintTop_toBottomOf="@+id/btn_create"
+                                    tools:ignore="TextSizeCheck" />
+
+                                <ImageButton
+                                    android:id="@+id/backbutton"
+                                    android:layout_width="51dp"
+                                    android:layout_height="32dp"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:background="@null"
+                                    android:contentDescription="@string/todo"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/back_button"
+                                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                                <ImageView
+                                    android:id="@+id/logo"
+                                    android:layout_width="123dp"
+                                    android:layout_height="103dp"
+
+                                    android:layout_marginTop="48dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.546"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/emergenz_logo" />
+
+                                <TextView
+                                    android:id="@+id/backgroundContact"
+                                    android:layout_width="310dp"
+                                    android:layout_height="42dp"
+                                    android:layout_marginTop="36dp"
+                                    android:background="@drawable/rectangle"
+                                    app:layout_constraintEnd_toEndOf="@+id/address"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/address"
+                                    app:layout_constraintTop_toBottomOf="@+id/address" />
+
+                                <EditText
+                                    android:id="@+id/editLname"
+                                    android:layout_width="265dp"
+                                    android:layout_height="36dp"
+                                    android:autofillHints=""
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:inputType="text"
+                                    android:textColor="#000000"
+                                    app:layout_constraintBottom_toBottomOf="@+id/address"
+                                    app:layout_constraintEnd_toEndOf="@+id/address"
+                                    app:layout_constraintHorizontal_bias="0.938"
+                                    app:layout_constraintStart_toStartOf="@+id/address"
+                                    app:layout_constraintTop_toTopOf="@+id/address"
+                                    app:layout_constraintVertical_bias="0.5"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@+id/editContact"
+                                    android:layout_width="240dp"
+                                    android:layout_height="36dp"
+                                    android:autofillHints=""
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:inputType="phone|number"
+                                    android:textColor="#000000"
+                                    app:layout_constraintBottom_toBottomOf="@+id/background_Pass"
+                                    app:layout_constraintEnd_toEndOf="@+id/background_Pass"
+                                    app:layout_constraintHorizontal_bias="0.938"
+                                    app:layout_constraintStart_toStartOf="@+id/background_Pass"
+                                    app:layout_constraintTop_toTopOf="@+id/background_Pass"
+                                    app:layout_constraintVertical_bias="0.5"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@+id/OTP_edit"
+                                    android:layout_width="150dp"
+                                    android:layout_height="34dp"
+                                    android:autofillHints=""
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:inputType="number"
+                                    android:maxLength="6"
+                                    android:textColor="#000000"
+                                    app:layout_constraintBottom_toBottomOf="@+id/background_OTP"
+                                    app:layout_constraintEnd_toEndOf="@+id/background_OTP"
+                                    app:layout_constraintHorizontal_bias="0.7"
+                                    app:layout_constraintStart_toStartOf="@+id/background_OTP"
+                                    app:layout_constraintTop_toTopOf="@+id/background_OTP"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@+id/editAddress"
+                                    android:layout_width="265dp"
+                                    android:layout_height="36dp"
+                                    android:autofillHints=""
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:inputType="text"
+                                    android:textColor="#000000"
+                                    app:layout_constraintBottom_toBottomOf="@+id/backgroundContact"
+                                    app:layout_constraintEnd_toEndOf="@+id/backgroundContact"
+                                    app:layout_constraintHorizontal_bias="0.938"
+                                    app:layout_constraintStart_toStartOf="@+id/backgroundContact"
+                                    app:layout_constraintTop_toTopOf="@+id/backgroundContact"
+                                    app:layout_constraintVertical_bias="0.5"
+                                    tools:ignore="LabelFor" />
+
+                                <ImageView
+                                    android:id="@+id/icn_phone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="6dp"
+                                    android:contentDescription="@string/toDo"
+                                    app:layout_constraintBottom_toBottomOf="@+id/background_Pass"
+                                    app:layout_constraintStart_toStartOf="@+id/background_Pass"
+                                    app:layout_constraintTop_toTopOf="@+id/background_Pass"
+                                    app:layout_constraintVertical_bias="0.222"
+                                    app:srcCompat="@drawable/baseline_smartphone_24" />
+
+                                <ImageView
+                                    android:id="@+id/icn_address"
+                                    android:layout_width="38dp"
+                                    android:layout_height="28dp"
+                                    android:contentDescription="@string/to_do"
+                                    app:layout_constraintBottom_toBottomOf="@+id/backgroundContact"
+                                    app:layout_constraintStart_toStartOf="@+id/backgroundContact"
+                                    app:layout_constraintTop_toTopOf="@+id/backgroundContact"
+                                    app:srcCompat="@drawable/address_icon" />
+
+                                <ImageView
+                                    android:id="@+id/icn_address2"
+                                    android:layout_width="38dp"
+                                    android:layout_height="28dp"
+                                    android:contentDescription="@string/to_do"
+                                    app:layout_constraintBottom_toBottomOf="@+id/address"
+                                    app:layout_constraintStart_toStartOf="@+id/address"
+                                    app:layout_constraintTop_toTopOf="@+id/address"
+                                    app:srcCompat="@drawable/icon_name" />
+
+                                <ImageView
+                                    android:id="@+id/icn_address3"
+                                    android:layout_width="38dp"
+                                    android:layout_height="28dp"
+                                    android:contentDescription="@string/to_do"
+                                    app:layout_constraintBottom_toBottomOf="@+id/backgroundName"
+                                    app:layout_constraintStart_toStartOf="@+id/backgroundName"
+                                    app:layout_constraintTop_toTopOf="@+id/backgroundName"
+                                    app:srcCompat="@drawable/icon_name" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressbarSign"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone"
+                                    app:layout_constraintBottom_toBottomOf="@+id/OTP_btn"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.207"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/OTP_btn" />
+
+                                <Button
+                                    android:id="@+id/OTP_btn"
+                                    android:layout_width="100dp"
+                                    android:layout_height="36dp"
+                                    android:background="@null"
+                                    android:text="Request OTP"
+                                    android:textAllCaps="false"
+                                    android:textColor="#01579B"
+                                    app:layout_constraintBottom_toBottomOf="@+id/background_OTP"
+                                    app:layout_constraintStart_toStartOf="@+id/background_OTP"
+                                    app:layout_constraintTop_toTopOf="@+id/background_OTP" />
+
+                                <Button
+                                    android:id="@+id/verify_btn"
+                                    android:layout_width="100dp"
+                                    android:layout_height="36dp"
+                                    android:background="@null"
+                                    android:text="Verify OTP"
+                                    android:textAllCaps="false"
+                                    android:textColor="#01579B"
+                                    android:visibility="gone"
+                                    app:layout_constraintBottom_toBottomOf="@+id/background_OTP"
+                                    app:layout_constraintStart_toStartOf="@+id/background_OTP"
+                                    app:layout_constraintTop_toTopOf="@+id/background_OTP" />
+
+                                <TextView
+                                    android:id="@+id/countrycODE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="+63"
+                                    app:layout_constraintBottom_toBottomOf="@+id/icn_phone"
+                                    app:layout_constraintEnd_toStartOf="@+id/editContact"
+                                    app:layout_constraintStart_toEndOf="@+id/icn_phone"
+                                    app:layout_constraintTop_toTopOf="@+id/icn_phone" />
+
+                                <TextView
+                                    android:id="@+id/countDown"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="%d seconds remaining"
+                                    android:visibility="gone"
+                                    app:layout_constraintBottom_toTopOf="@+id/btn_create"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/background_OTP"
+                                    app:layout_constraintVertical_bias="0.367" />
+
+                                <Button
+                                    android:id="@+id/resend_btn"
+                                    android:layout_width="100dp"
+                                    android:layout_height="36dp"
+                                    android:background="@null"
+                                    android:text="Resend OTP"
+                                    android:textAllCaps="false"
+                                    android:textColor="#01579B"
+                                    android:visibility="gone"
+                                    app:layout_constraintBottom_toTopOf="@+id/btn_create"
+                                    app:layout_constraintEnd_toEndOf="@+id/background_OTP"
+                                    app:layout_constraintStart_toStartOf="@+id/background_OTP"
+                                    app:layout_constraintTop_toBottomOf="@+id/background_OTP" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <Space
+                        android:id="@+id/space"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="4dp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- This is for background -->
+
+            <!-- This is for Icon -->
+
+            <!-- This is for Typing -->
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

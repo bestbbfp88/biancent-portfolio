@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Request01">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="Welcome back!"
+        android:textColor="#330000"
+        app:layout_constraintStart_toEndOf="@+id/pic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Name"
+        android:textColor="#330000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/welcome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <TextView
+        android:id="@+id/needs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="What's your request?"
+        android:textColor="#330000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/big_icon" />
+
+    <ImageView
+        android:id="@+id/burger"
+        android:layout_width="28dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toEndOf="@+id/welcome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/burger_icon" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119"
+        app:srcCompat="@drawable/line_8" />
+
+    <ImageButton
+        android:id="@+id/ambulance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/needs"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/needs"
+        app:layout_constraintTop_toBottomOf="@+id/needs"
+        app:srcCompat="@drawable/bg_ambulance" />
+
+    <TextView
+        android:id="@+id/ambulance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Ambulance"
+        android:textColor="#330000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ambulance"
+        app:layout_constraintEnd_toEndOf="@+id/ambulance"
+        app:layout_constraintStart_toStartOf="@+id/ambulance"
+        app:layout_constraintTop_toTopOf="@+id/ambulance" />
+
+    <ImageButton
+        android:id="@+id/fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/police"
+        app:layout_constraintEnd_toEndOf="@+id/ambulance"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ambulance"
+        app:layout_constraintTop_toBottomOf="@+id/ambulance"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg_fire" />
+
+    <TextView
+        android:id="@+id/fire_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Fire and Rescue"
+        android:textColor="#330000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fire"
+        app:layout_constraintEnd_toEndOf="@+id/fire"
+        app:layout_constraintStart_toStartOf="@+id/fire"
+        app:layout_constraintTop_toTopOf="@+id/fire" />
+
+    <ImageButton
+        android:id="@+id/police"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="184dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fire"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fire"
+        app:srcCompat="@drawable/bg_police" />
+
+    <TextView
+        android:id="@+id/fire_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Police"
+        android:textColor="#330000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/police"
+        app:layout_constraintEnd_toEndOf="@+id/police"
+        app:layout_constraintStart_toStartOf="@+id/police"
+        app:layout_constraintTop_toTopOf="@+id/police" />
+
+    <!--<com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="36dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="1000"
+        app:iss_period="1000"
+        app:iss_text_align="CENTER"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reqtxt" />
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

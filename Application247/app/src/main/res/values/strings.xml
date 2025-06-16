@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Application 24 7</string>
+    <string name="name">Name</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="proceed_to">Proceed to</string>
+    <string name="password">Password</string>
+    <string name="re_type_password">Confi Password</string>
+    <string name="address">Address</string>
+    <string name="Create_an_account" />
+    <string name="Create_button">Create an account</string>
+    <string name="Contact_Number">Contact Number</string>
+    <string name="Date_Birth">Date of Birth</string>
+    <string name="create_a_account">Create an account</string>
+    <string name="log_in">Log In</string>
+    <string name="todo">TODO</string>
+    <string name="first_name">First Name</string>
+    <string name="to_do">TODO</string>
+    <string name="toDo">TODO</string>
+    <string name="create_account">create account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login_your_account">Login your account</string>
+    <string name="create_an_account2">Create an Account?</string>
+    <string name="title_activity_sign_up_new">Sign_up_new</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+    <string name="timer_format">%d seconds remaining</string>
+</resources>

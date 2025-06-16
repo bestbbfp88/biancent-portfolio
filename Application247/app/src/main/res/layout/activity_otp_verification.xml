@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".OTP_verification">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/otpText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/nunito_sans_bold"
+          android:text="Enter Verification Code"
+          android:textColor="#0C0C0C"
+          android:textSize="24sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.456"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.424" />
+
+      <TextView
+          android:id="@+id/otp_statement"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="We have sent OTP to your phone number"
+          app:layout_constraintEnd_toEndOf="@+id/otpText"
+          app:layout_constraintStart_toStartOf="@+id/otpText"
+          app:layout_constraintTop_toBottomOf="@+id/otpText" />
+
+      <TextView
+          android:id="@+id/mobileText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="28dp"
+          android:text="Mobile"
+          app:layout_constraintEnd_toEndOf="@+id/otpText"
+          app:layout_constraintHorizontal_bias="0.506"
+          app:layout_constraintStart_toStartOf="@+id/otpText"
+          app:layout_constraintTop_toBottomOf="@+id/otpText" />
+
+      <EditText
+          android:id="@+id/code1"
+          android:layout_width="40dp"
+          android:layout_height="45dp"
+          android:layout_marginEnd="8dp"
+          android:background="@drawable/stroke"
+          android:backgroundTintMode="src_in"
+          android:ems="10"
+          android:gravity="center"
+          android:imeOptions="actionNext"
+          android:inputType="number"
+          android:maxLength="1"
+          android:shadowColor="#330000"
+          android:textColor="#000000"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/code2"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.664"
+          tools:ignore="LabelFor" />
+
+      <EditText
+          android:id="@+id/code2"
+          android:layout_width="40dp"
+          android:layout_height="45dp"
+          android:layout_marginEnd="8dp"
+          android:background="@drawable/stroke"
+          android:ems="10"
+          android:gravity="center"
+          android:imeOptions="actionNext"
+          android:inputType="number"
+          android:maxLength="1"
+          android:textColor="#000000"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/code3"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.663"
+          tools:ignore="LabelFor" />
+
+      <EditText
+          android:id="@+id/code3"
+          android:layout_width="40dp"
+          android:layout_height="45dp"
+          android:background="@drawable/stroke"
+          android:ems="10"
+          android:gravity="center"
+          android:imeOptions="actionNext"
+          android:inputType="number"
+          android:maxLength="1"
+          android:textColor="#000000"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.419"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.663"
+          tools:ignore="LabelFor" />
+
+      <EditText
+          android:id="@+id/code4"
+          android:layout_width="40dp"
+          android:layout_height="45dp"
+          android:layout_marginStart="8dp"
+          android:background="@drawable/stroke"
+          android:ems="10"
+          android:gravity="center"
+          android:imeOptions="actionNext"
+          android:inputType="number"
+          android:maxLength="1"
+          android:textColor="#000000"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/code3"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.661"
+          tools:ignore="LabelFor" />
+
+      <EditText
+          android:id="@+id/code5"
+          android:layout_width="40dp"
+          android:layout_height="45dp"
+          android:layout_marginStart="8dp"
+          android:background="@drawable/stroke"
+          android:ems="10"
+          android:gravity="center"
+          android:imeOptions="actionNext"
+          android:inputType="number"
+          android:maxLength="1"
+          android:textColor="#000000"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/code4"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.66"
+          tools:ignore="LabelFor" />
+
+      <EditText
+          android:id="@+id/code6"
+          android:layout_width="40dp"
+          android:layout_height="45dp"
+          android:layout_marginStart="8dp"
+          android:background="@drawable/stroke"
+          android:ems="10"
+          android:gravity="center"
+          android:imeOptions="actionDone"
+          android:inputType="number"
+          android:maxLength="1"
+          android:textColor="#000000"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/code5"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.658"
+          tools:ignore="LabelFor" />
+
+      <TextView
+          android:id="@+id/Countdown"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:text="@string/timer_format"
+          android:textColor="#330000"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/mobileText" />
+
+      <Button
+          android:id="@+id/sumbit_btn"
+          android:layout_width="293dp"
+          android:layout_height="50dp"
+          android:backgroundTint="#330000"
+          android:text="Submit"
+          android:textColor="#E6D6C0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/Countdown"
+          app:layout_constraintVertical_bias="0.65" />
+
+      <TextView
+          android:id="@+id/no_OTP"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Dont receive OTP?"
+          android:textColor="#000000"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="@+id/code6"
+          app:layout_constraintHorizontal_bias="0.067"
+          app:layout_constraintStart_toStartOf="@+id/code1"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.749" />
+
+      <Button
+          android:id="@+id/resend_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:background="@null"
+          android:gravity="center"
+          android:text="Resend"
+          android:textAllCaps="false"
+          android:textColor="#648FFF"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="@+id/code6"
+          app:layout_constraintHorizontal_bias="0.927"
+          app:layout_constraintStart_toStartOf="@+id/code1"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.757" />
+
+      <ImageView
+          android:id="@+id/imageView10"
+          android:layout_width="285dp"
+          android:layout_height="219dp"
+          app:layout_constraintBottom_toTopOf="@+id/otpText"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.351"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.882"
+          app:srcCompat="@drawable/verfication_log" />
+
+      <ImageView
+          android:id="@+id/back_btn_verfication"
+          android:layout_width="25dp"
+          android:layout_height="16dp"
+          android:layout_marginTop="32dp"
+          android:contextClickable="true"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.073"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/back_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
