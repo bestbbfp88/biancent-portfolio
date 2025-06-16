@@ -1,0 +1,47 @@
+<!-- ticket-modal.html -->
+<div class="modal fade" id="createTicketModal" tabindex="-1" aria-labelledby="createTicketModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createTicketModalLabel">Create New Ticket</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="ticketForm">
+                    <div class="mb-3">
+                        <label class="form-label">📍 Location</label>
+                        <input type="text" class="form-control" id="ticketDescription" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">📌 Status</label>
+                        <input type="text" class="form-control" id="ticketStatus" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">⏳ Reported Time</label>
+                        <input type="text" class="form-control" id="ticketDateTime" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">🙍‍♂️ Reported By</label>
+                        <input type="text" class="form-control" id="ticketUserName" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">📞 Contact</label>
+                        <input type="text" class="form-control" id="ticketUserContact" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">📧 Email</label>
+                        <input type="email" class="form-control" id="ticketUserEmail" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">📝 Additional Notes</label>
+                        <textarea class="form-control" id="ticketNotes" rows="3" placeholder="Enter additional details..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="submitTicket()">Submit Ticket</button>
+            </div>
+        </div>
+    </div>
+</div>
