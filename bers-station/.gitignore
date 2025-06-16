@@ -22,4 +22,4 @@ yarn-error.log
 /.vscode
 /.zed
 firebase-init.js
-firebase_credential.json
+config/firebase_credential.json
