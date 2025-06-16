@@ -18,7 +18,7 @@ Currently open to remote or part-time opportunities. I’m always up for learnin
 ## 🧰 Tech Stack
 
 - HTML, CSS, JavaScript
-- Flutter & Dart
+- Dart or Flutter
 - PHP, Laravel
 - Firebase (Auth, Realtime DB, Firestore)
 
