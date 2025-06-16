@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "database-4b12a",
+    "bers": "database-4b12a"
+  },
+  "targets": {},
+  "etags": {}
+}

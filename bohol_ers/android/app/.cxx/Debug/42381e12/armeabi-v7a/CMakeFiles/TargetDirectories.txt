@@ -1,0 +1,2 @@
+C:/Users/bianc/BERS/Mobile/bohol_ers/android/app/.cxx/Debug/42381e12/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/bianc/BERS/Mobile/bohol_ers/android/app/.cxx/Debug/42381e12/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+C:/Users/bianc/BERS/Mobile/bohol_ers/android/app/.cxx/RelWithDebInfo/5l1v246k/x86/CMakeFiles/edit_cache.dir
+C:/Users/bianc/BERS/Mobile/bohol_ers/android/app/.cxx/RelWithDebInfo/5l1v246k/x86/CMakeFiles/rebuild_cache.dir
