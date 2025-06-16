@@ -1,0 +1,71 @@
+/* Modal */
+.hospital-modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.hospital-modal-title {
+  font-weight: bold;
+}
+
+.hospital-modal-close {
+  color: #000;
+}
+
+/* Actions */
+.hospital-add-btn {
+  background-color: #1E293B;
+  border: none;
+}
+
+.hospital-add-btn :hover {
+  background-color: #626262;
+  border: none;
+}
+
+.hospital-archive-btn {
+  background-color: #6c757d;
+  border: none;
+}
+
+/* Search */
+.hospital-search {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Table */
+.hospital-table {
+  width: 100%;
+}
+
+.hospital-table-header {
+  background-color: #f1f1f1;
+}
+
+.hospital-table-body .hospital-item {
+  transition: background-color 0.3s ease;
+}
+
+.hospital-table-body .hospital-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Buttons */
+.btn-archive {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-update {
+  background-color: #007bff;
+  border: none;
+}
+
+/* Fix Google Places Autocomplete inside Bootstrap Modal */
+.pac-container {
+  z-index: 1500 !important; /* Must be higher than Bootstrap modal (default 1050) */
+}
+
